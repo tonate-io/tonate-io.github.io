@@ -1,5 +1,33 @@
 <html>
+
+<style>
+    body {
+  background-color: #333;
+  font-weight:600;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+}
+
+.rainbowText {
+  font-family:helvetica,arial black;
+  font-size:70px;
+  background-image: 
+    linear-gradient(to right, #e74346,#6560ac,#1580f0,#1da89d,#3fc754,#78c93c,#edcb0e,#e74346); 
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;  
+  animation: move 255s linear infinite;
+}
+
+@keyframes move {
+	to {
+		background-position: 4500vh;
+	}
+}
+</style>
 <body>
+<div class="rainbowText">Making music magical.</div>
 <h1>Tonate</h1>
 </body>
 </html>
